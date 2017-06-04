@@ -1,0 +1,36 @@
+<!-- author:ASentry -->
+<!-- date of build:2017-6-1 -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>管理员登录</title>
+	<link rel="stylesheet" type="text/css" href="css/admin.css">
+	<script type="text/javascript" src="./js/admin.js"></script>
+</head>
+<body>
+	<body onload="Focus()">
+	<form action="admin.php" method="post" name="adminform" onsubmit="return NotNull();">
+		<div class="adminbox">
+			<table class="admintable">
+				<tr>
+					<td><h1><span>管理员登录</span></h1></td>
+				</tr>
+				<tr>
+					<td><input type="text" name="adminaccount" maxlength="32" placeholder="请输入用户名或账号"></td>
+				</tr>
+				<tr>
+					<td><input type="password" name="adminpwd" maxlength="32" placeholder="请输入密码"></td>
+				</tr>
+				<tr>
+					<td><input type="submit" name="adminbt" value="登录"></td>
+				</tr>
+				<tr>
+					<td><a href="forgetpwdfirst.html">忘记密码?</a></td>
+				</tr>
+				<tr>
+			</table>
+		</div>
+	</form>
+</body>
+</html>

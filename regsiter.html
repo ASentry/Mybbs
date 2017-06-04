@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+       <title>账号注册</title>
+       <link rel="stylesheet" type="text/css" href="./css/regsiter.css">
+       <script type="text/javascript" src="./js/regsiter.js"></script>
+</head>
+<body onload="Focus()">
+    <div>
+      <p>
+          <span class="head">
+              我已注册,现在就
+              <a href="login.php">登陆</a>             
+          </span>
+      </p>
+    </div>
+    <div id="nav">
+        <img src="./image/regsiter1.png" hight=20px;>
+    </div>
+<form action="regsiter.php" method="post" onsubmit="return notNull()" name="regsiterform">
+
+    <div class="regsiter">
+        <table class="regsiterpostion">
+            <tr>
+                <td class="regsitertd">
+                    用户名
+                </td>
+                <td>
+                    <input type="text" name="userName" placeholder="请设置用户名"  id="post_userName"  onblur="check(this);">
+                </td>
+            </tr>
+            <tr>
+                <td class="regsitertd">
+                    验证码
+                </td>
+                <td>
+                    <input type="text" name="Code" id="post_Code" placeholder="请输入验证码" onblur="
+                    check(this);"
+                    >
+                    <img id="image_1" src='./captcha.php?r=<?php echo rand(); ?>'>
+                    <a class="s" href="##" onclick="document.getElementById('image_1').src='./captcha.php?r='+Math.random()">换一个?</a>
+                </td>
+            </tr>
+            <tr>
+              <td class="regsitertd">
+                  邮箱地址
+              </td>
+              <td>
+                  <input type="text" name="postbox" id="post_postbox" placeholder="请输入邮箱地址" onblur="check(this);">
+              </td>
+          </tr>
+          <tr>
+              <td class="regsitertd">
+                密码
+              </td>
+              <td>
+                  <input type="password" name="passWord" id="post_passWord" placeholder="请输入密码" onblur="check(this);">
+              </td>
+          </tr>
+          <tr>
+              <td class="regsitertd">
+                  确认密码
+              </td>
+              <td>
+                  <input type="password" name="besurepwd" id="post_besurepwd" placeholder="请再次输入密码" onblur="check(this);">
+              </td>
+          </tr>
+          <tr>
+             <td></td>
+             <td class="s">
+                 <input type="checkbox" name="isAgree" id="post_isAgree">
+                 阅读并接受协议
+                 <a href="##">《用户协议》</a>
+             </td>
+         </tr>
+         <tr>
+             <td></td>
+             <td>
+                <input type="submit" value="注册" id="post_submit" >
+            </td>
+        </tr>
+    </table>
+  </div>
+</form>
+</body>
+</html>

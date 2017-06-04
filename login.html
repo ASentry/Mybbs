@@ -1,0 +1,44 @@
+<!-- author:Asentry -->
+<!-- date of bulid:2017-5-25 -->
+<!-- last of revise:2017-6-3 -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>登录</title>
+	<link rel="stylesheet" type="text/css" href="css/login.css">
+	<script type="text/javascript" src="./js/login.js"></script>
+</head>
+<body onload="Focus()">
+	<form action="logindeal.php" method="post" name="loginform" onsubmit="return NotNull();">
+		<div class="loginbox">
+			<table class="logintable">
+				<tr>
+					<td colspan="2"><h1><span>帐号登录</span></h1></td>
+				</tr>
+				<tr>
+					<td colspan="2"><input type="text" name="loginaccount" maxlength="32" placeholder="请输入用户名或账号"></td>
+				</tr>
+				<tr>
+					<td colspan="2"><input type="password" name="loginpwd" maxlength="32" placeholder="请输入密码"></td>
+				</tr>
+				<tr>
+					<td colspan="2"><input type="submit" name="loginbt" value="登录"></td>
+				</tr>
+				<tr class="table-middle">
+				    <td class="remember-me"><input type="checkbox" name="remember-me" value="remember-me"><span class="remember-me">记住我</span></td>
+					<td><a href="forgetpwdfirst.html">忘记密码?</a></td>
+				</tr>
+				<tr>
+					<td>
+						<span id="noaccount">没有帐号？</span>
+					</td>
+					<td>
+						<input type="button" name="register" value="注册帐号>>" onclick="Regsiter();">
+					</td>
+				</tr>
+			</table>
+		</div>
+	</form>
+</body>
+</html>

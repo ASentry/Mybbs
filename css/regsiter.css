@@ -1,0 +1,83 @@
+@charset "utf-8";
+body{
+	font-family: Arial,"宋体";
+	font-size: 19px;
+}
+.regsiter{
+
+
+}
+#nav{
+
+	position: absolute;
+	margin-left: 13%;
+	top: 16%;
+    height: 20px;
+}
+.regsiter input[type="text"]{
+	border: 1px solid #ddd;
+    color: #666;
+    display: block;
+    float: left;
+    font-size: 14px;
+    height: 16px;
+    margin-right: 10px;
+    padding: 11px 10px;
+    position: relative;
+    transition: all 0.3s ease 0s;
+    width: 328px;
+}
+.regsiter input[type="password"]{
+	border: 1px solid #ddd;
+    color: #666;
+    display: block;
+    float: left;
+    font-size: 14px;
+    height: 16px;
+    margin-right: 10px;
+    padding: 11px 10px;
+    position: relative;
+    transition: all 0.3s ease 0s;
+    width: 328px;
+}
+.regsiterpostion{
+	position: fixed;
+	left: 20%;
+	top: 20%;
+}
+.regsitertd{
+	text-align: right;
+}
+.regsiter input[type="submit"]{
+	background-color: #3f89ec;
+	float: left;
+    width: 350px;
+    background-image: none;
+    border: 0 none;
+    border-radius: 3px;
+    color: #fff;
+    cursor: pointer;
+    display: block;
+    font-size: 16px;
+    font-weight: 700;
+    height: 50px;
+    transition: all 0.3s ease 0s;
+    line-height: 32px;
+    text-align: center;
+    line-height: 32px;
+    text-align: center;
+}
+.s{
+	
+    font-size: 15px;
+    margin-left: 5px;
+}
+#post_Code{
+    width: 160px;
+}
+.head{
+    font-size: 15px;
+    
+    margin-top:3px;
+    margin-left: 1250px;
+}
